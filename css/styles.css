@@ -1,7 +1,7 @@
 :root {
   /* Font */
   --primary-font: 'Roboto', sans-serif;
-  --logo-font: 'Raleway, san-serif';
+  --logo-font: 'Raleway', san-serif;
 
   /* Color */
 
@@ -89,10 +89,9 @@ body {
   color: var(--color-iris);
   font-weight: 800;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
 }
 
 .half-header {
@@ -110,7 +109,9 @@ body {
 .nav-list-item:focus {
   color: var(--color-ocean);
 }
-
+.address {
+  font-style: normal;
+}
 .addres-contacts {
   font-size: 16px;
   color: var(--color-slate);
@@ -128,10 +129,12 @@ body {
 }
 
 .btn {
+  font-family: var(--primary-font);
   color: var(--primary-color-text);
   background-color: var(--primary-color-background);
   font-weight: 500;
   font-size: 16px;
+  letter-spacing: 0.04em;
   line-height: 1.5;
   cursor: pointer;
 }

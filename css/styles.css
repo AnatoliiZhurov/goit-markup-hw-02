@@ -1,8 +1,10 @@
-: :root {
+:root {
   /* Font */
   --primary-font: 'Roboto', sans-serif;
+  --logo-font: 'Raleway, san-serif';
 
   /* Color */
+
   --color-iris: #4d5ae5;
   --color-ocean: #404bbf;
   --color-navy-blue: #2e2f42;
@@ -15,74 +17,209 @@
   --color-grey: #2e2f42;
   --color-white: #ffffff;
   --color-dairy: #fcfcfc;
+
+  /* Button text color*/
+  --primary-color-text: #ffffff;
+
+  /* Button text background*/
+
+  --primary-color-background: #4d5ae5;
 }
 
+/* Hiden elements */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Font elements */
 .text-style-header-1 {
+  color: var(--color-white);
   font-size: 56px;
-  font-family: 'Roboto';
   font-weight: 700;
-  font-style: normal;
   line-height: 60px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  text-transform: none;
+  text-align: center;
 }
-.text-style-header-2 {
+.header-2 {
+  color: var(--color-navy-blue);
   font-size: 36px;
-  font-family: 'Roboto';
   font-weight: 700;
-  font-style: normal;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
+  line-height: 1.1;
   text-transform: capitalize;
+  text-align: center;
 }
-.text-style-header-3 {
-  font-size: 20px;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  text-transform: none;
-}
+
 .text-style-body {
   font-size: 16px;
-  font-family: 'Roboto';
   font-weight: 400;
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  text-transform: none;
+  line-height: 1.5x;
 }
 
-.text-style-small-text {
-  font-size: 12px;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-style: normal;
-  line-height: 14px;
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  text-transform: none;
-}
-
+/* Main properties */
 body {
-  font-family: roboto, sans-serif;
-  letter-spacing: 2%;
-}
-
-.btn {
-  font-family: inherit;
+  font-family: var(--primary-font, sans-serif);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+  background-color: var(--color-white);
 }
 
 .list {
   list-style: none;
 }
 
-.link > p,
-.link > h3 {
+.link {
   text-decoration: none;
+  font-style: normal;
+}
+
+/* Header */
+
+.header {
+  background-color: var(--color-cornflower);
+}
+
+.header-logo {
+  font-family: var(--logo-font);
+  color: var(--color-iris);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.half-header {
+  color: var(--color-navy-blue);
+}
+
+.nav-list-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-navy-blue);
+}
+
+.nav-list-item:hover,
+.nav-list-item:focus {
+  color: var(--color-ocean);
+}
+
+.addres-contacts {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-slate);
+}
+
+.addres-contacts[href='mailto:info@devstudio.com']:hover {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-ocean);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--color-navy-blue);
+}
+
+.btn {
+  color: var(--primary-color-text);
+  background-color: var(--primary-color-background);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: var(--color-ocean);
+}
+
+/* features-section */
+
+.features-section {
+}
+.features-list {
+}
+
+.features-name {
+  color: var(--color-navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* Workspace */
+
+.workspace {
+}
+
+.workspace-img-list {
+}
+
+.workspace-img-item {
+}
+
+/* Team members setion */
+
+.cards {
+  background-color: var(--color-cloud);
+}
+
+.cards-list {
+}
+
+.card-item {
+  background-color: var(--color-white);
+}
+
+.member-name {
+  color: var(--color-navy-blue);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.member-deskr {
+  text-align: center;
+}
+
+/* Footer */
+
+.gen-info {
+  background-color: var(--color-navy-blue);
+}
+
+.info-logo {
+  font-family: var(--logo-font);
+  color: var(--color-iris);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.info-logo-half {
+  color: var(--color-white);
+}
+
+.push-text {
+  color: var(--color-cloud);
 }

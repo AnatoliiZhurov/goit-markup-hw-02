@@ -47,7 +47,7 @@
   color: var(--color-white);
   font-size: 56px;
   font-weight: 700;
-  line-height: 1.07px;
+  line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
 }
@@ -133,6 +133,7 @@ body {
 .btn {
   font-family: var(--primary-font);
   color: var(--primary-color-text);
+
   background-color: var(--primary-color-background);
   font-weight: 500;
   font-size: 16px;
@@ -224,12 +225,15 @@ body {
 
 /* Portfolio */
 
-.btn-light:hover,
-.btn-light:focus,
-.btn-light:active {
+.btn-filter {
   color: var(--color-iris);
-
   background-color: var(--color-cloud);
+}
+
+.btn-filter:hover,
+.btn-filter:focus,
+.btn-filter:active {
+  color: var(--color-white);
 }
 .example-item {
   color: inherit;
